@@ -1,0 +1,29 @@
+datasource:
+  stone:
+    connection-timeout: 3000
+    driver-class-name: oracle.jdbc.OracleDriver
+    initial-size: 2
+    max-active: 2
+    max-idle: 2
+    max-wait: 10000
+    maximum-pool-size: 2
+    min-idle: 1
+    password: pob6y1o6st6j78k5
+    test-on-borrow: true
+    test-while-idle: true
+    time-between-eviction-runs-millis: 18800
+    type: com.alibaba.druid.pool.DruidDataSource
+    jdbc-url: jdbc:oracle:thin:@10.200.4.87:1521:stonetest
+    username: wu_wdp
+    validation-query: select 1 from dual
+
+  #sqllite的配置
+  sqllite:
+    jdbc-url: jdbc:sqlite:D:SQLite.db
+    username:
+    password:
+    driver-class-name: org.sqlite.JDBC
+    time-between-eviction-runs-millis: 18800
+    validation-query: select 1 from dual
+    test-on-borrow: true
+    test-while-idle: true

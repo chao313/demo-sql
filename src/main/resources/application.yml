@@ -1,0 +1,15 @@
+server:
+  port: 33061
+  servlet:
+    context-path: /demo_sql
+spring:
+  name: demo-sql
+  profiles:
+    active: dev
+
+##是否启动本地redis
+redis:
+  local:
+    active: false
+    maxheap: 200m
+    port: 6379
